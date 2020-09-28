@@ -1,0 +1,8 @@
+.DataList li:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.DataList li:focus {
+    background-color: rgb(240, 240, 240);
+}

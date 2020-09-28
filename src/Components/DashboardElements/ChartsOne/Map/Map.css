@@ -1,0 +1,15 @@
+.marker-btn {
+    padding:0;
+    background: none;
+    border: none;
+}
+
+.popupCityData {
+    font-size: 1.1em;
+}
+
+.popupCityData > .CityAndState{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(34, 58, 94);
+}

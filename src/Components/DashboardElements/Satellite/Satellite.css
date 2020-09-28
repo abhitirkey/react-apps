@@ -1,0 +1,14 @@
+.SatStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SatStats > p {
+    font-size: 1.1em;
+}
+
+.satellite-box {
+    background-color: #081217;
+    color: #ffffff94;
+}

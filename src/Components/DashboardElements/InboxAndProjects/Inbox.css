@@ -1,0 +1,49 @@
+.inbox-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.inboxItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.inboxItem:last-child {
+    border-bottom: none;
+}
+
+.inboxItem:hover {
+    background-color: rgb(249 249 249);
+    cursor: pointer;
+}
+
+.inboxItem  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.messageExcerpt, .messageBy {
+    margin: 5px;
+}
+
+.messageBy {
+    font-weight: bold;
+}
+
+.messageExcerpt {
+    font-size: 0.8em;
+}
+
+.message-time {
+    font-size: 0.8em;
+    align-self: flex-start;
+    margin: 10px 10px 0 0;
+}

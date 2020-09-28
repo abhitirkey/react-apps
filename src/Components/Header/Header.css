@@ -1,0 +1,80 @@
+.header-container {
+    /* The following is necessary to keep the header fixed and visible */
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding: 0 20px;
+  background: rgb(250, 250, 250);
+
+  /* Setting full width for various browsers */
+  width: 100%;
+  width: stretch;
+  width: -moz-available;
+  width: -webkit-fill-available;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  position: relative;
+}
+
+.header-top > * {
+  margin-left: 20px;
+}
+
+.hamburger {
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  color: rgb(29, 29, 29);
+}
+
+.searchbar-div {
+  background-color: #f3f3f3;
+  border-radius: 40px;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.btn-no-style {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+}
+
+.btn-no-style:focus, .btn-no-style:active {
+  outline: none;
+  border: none;
+}
+
+.searchbar-div > input[type="search"]{
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+  width: 150px;
+}
+
+
+.logo {
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}

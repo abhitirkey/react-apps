@@ -1,0 +1,34 @@
+.sidebar-container {
+    width: 250px;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    color: rgb(240, 240, 240);
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left:0;
+    padding: 5px 20px 0px 0px;
+    box-sizing: border-box;
+}
+
+.sidebar-close {
+    cursor: pointer;
+}
+
+.close-icon {
+    color: rgb(240, 240, 240);
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-list > li {
+    padding: 20px 10px;
+    font-size: 1.2em;
+}
+
+.sidebar-list > li:hover {
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,144 @@
+.App * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-spacer {
+  flex: 1;
+}
+
+.hide { 
+  /* Add or remove this class to hide or un-hide a component or element */
+  display: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.not-sidebar {
+  margin-left: 250px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom css added here */
+
+.float-right {
+  float:right;
+}
+
+.fa {
+  color: #929292;
+}
+
+.box {
+  z-index: 10;
+}
+
+
+.margin-zero {
+  margin:0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-margin-right {
+  margin-right: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-left {
+  margin-left: 0;
+}
+
+.linkButton {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: rgb(79, 113, 165);
+  cursor: pointer;
+}
+
+.linkButton:focus {
+  border: none;
+}
+
+.btn-transparent {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-transparent:focus {
+  border: none;
+  outline: none;
+}
+
+.DataList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 10px;
+}
+
+.DataList li {
+  padding: 10px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
