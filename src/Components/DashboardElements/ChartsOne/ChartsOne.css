@@ -6,3 +6,11 @@
 .DataList li:focus {
     background-color: rgb(240, 240, 240);
 }
+
+.pagination {
+    padding: 0;
+}
+
+.pagination > li {
+    padding: 4%;
+}

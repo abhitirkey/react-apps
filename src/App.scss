@@ -17,7 +17,11 @@
 }
 
 .not-sidebar {
-  margin-left: 250px;
+  transition: margin-left 0.5s;
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -ms-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,7 +31,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #cacaca;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -114,11 +118,10 @@
   flex-direction: column;
   list-style: none;
   padding: 10px;
-}
-
-.DataList li {
-  padding: 10px;
-  border-bottom: 1px solid rgb(201, 201, 201);
+  li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+  }
 }
 
 .full-width {

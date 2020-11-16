@@ -2,13 +2,18 @@
     width: 250px;
     height: 100%;
     background-color: rgb(20, 20, 20);
-    color: rgb(240, 240, 240);
+    color: rgb(221, 221, 221);
     position: fixed;
     z-index: 300;
     top: 0;
     left:0;
     padding: 5px 20px 0px 0px;
     box-sizing: border-box;
+    transition: display 0.5s;
+    -webkit-transition: display 0.5s;
+    -moz-transition: display 0.5s;
+    -ms-transition: display 0.5s;
+    -o-transition: display 0.5s;
 }
 
 .sidebar-close {
@@ -21,6 +26,11 @@
 
 .sidebar-list {
     list-style: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .sidebar-list > li {

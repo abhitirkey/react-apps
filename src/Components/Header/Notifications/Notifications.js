@@ -1,7 +1,7 @@
 import React from 'react'
 //import ReactDOM from 'react-dom'
 import {FaBell} from 'react-icons/fa'
-import './Notifications.css'
+import './Notifications.scss'
 
 class Notifications extends React.Component {
 

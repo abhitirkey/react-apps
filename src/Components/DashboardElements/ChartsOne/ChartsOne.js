@@ -63,16 +63,22 @@ const CitiesList = () => {
 
     useEffect(() => {
        const getTableData = async () => {
-            await fetch('https://examples.opendatasoft.com/api/records/1.0/search/?dataset=largest-us-cities&q=&rows=100')
+            await fetch('https://examples.opendatasoft.com/api/records/1.0/search/?dataset=largest-us-cities&q=&rows=1000')
             .then(response => (response.json()))
-            .then(data => setDataItems(data.records));
+            .then(data => {
+                let city_records = data.records;
+                city_records.sort((a, b) => {
+                    return (a.fields.rank - b.fields.rank);
+                })
+                setDataItems(city_records);
+            });
        }
        getTableData();
     }, [])
 
     if(itemsPerPage && currentPage && dataItems){
-        end = dataItems.length/itemsPerPage * currentPage;
-        start = end + 1 - itemsPerPage;
+        end = itemsPerPage * currentPage;
+        start = end - 10;
         currentPosts = dataItems.slice(start, end);
         listHTML = <ul className="DataList">
         {

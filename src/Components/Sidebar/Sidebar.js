@@ -12,7 +12,7 @@ function Sidebar() {
     }
 
     return (
-        <div style={sidebar ? {display: 'inline-block'}: {display: 'none'}} className="sidebar-container">
+        <div className={sidebar ? "sidebar-container": "sidebar-container hide"}>
             <h1 className="float-right sidebar-close" onClick={closeSidebar}><GrClose className="close-icon"></GrClose></h1>
             <ul className="sidebar-list">
                 <li>Dashboard</li>
