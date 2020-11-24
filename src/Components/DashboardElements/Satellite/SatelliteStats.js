@@ -5,7 +5,7 @@ const SatelliteStats = () => {
     const {satelliteData} = useContext(SatelliteContext);
     return (
         <div style={{width: '20%'}}>
-            <h1>Satellite Details</h1>
+            <h1>ISS Tracker</h1>
         {
             JSON.stringify(satelliteData) != JSON.stringify({}) ?
                     <div className="SatStats"><p>Latitude: <strong>{satelliteData.latitude}</strong></p>

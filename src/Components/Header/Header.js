@@ -34,7 +34,7 @@ class Header extends Component {
                         sidebar ? 
                             null: <span className="hamburger" onClick={this.toggleSidebar}><GiHamburgerMenu/></span>
                     }
-                    <h2 className="logo">R E A C T - P L A Y G R O U N D</h2>
+                    <h2 className="logo"><a href="#">R E A C T - P L A Y G R O U N D</a></h2>
                     <div className="flex-spacer"></div>
                     <div className="searchbar-div">
                         <input type="search" />

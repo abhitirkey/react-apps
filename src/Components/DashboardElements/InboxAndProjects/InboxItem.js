@@ -1,10 +1,11 @@
 import React from 'react'
 import './Inbox.css'
+import profilePic from './atirkey_dark.jpg'
 
 const InboxItem = () => {
     return (
         <div className="inboxItem">
-            <div><img src="/images/atirkey_profile_pic.jpg" alt=""/></div>
+            <div><img src={profilePic} alt=""/></div>
             <div style={{marginLeft: '20px'}}>
                 <p className="messageBy">Matteus</p>
                 <p className="messageExcerpt">Message excerpt</p>

@@ -78,3 +78,9 @@
   font-family: 'Comfortaa', cursive;
   color: white;
 }
+
+.logo > a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}

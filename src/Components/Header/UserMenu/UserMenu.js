@@ -1,12 +1,13 @@
 import React from 'react'
 import './UserMenu.css'
 import { FaCaretDown, FaPowerOff, FaCog, FaUserTie, FaLock } from 'react-icons/fa'
- 
+import profilePic from './atirkey_profile_pic.jpg';
+
 const UserMenu = () => {
     return(
         <div className="userMenuContainer">
             <button className="btn-transparent userMenuButton">
-                <img src="/images/atirkey_profile_pic.jpg" />
+                <img src={profilePic} />
                 <span>Abhishek Tirkey <FaCaretDown/> </span>
             </button>
             <ul className="userMenu">

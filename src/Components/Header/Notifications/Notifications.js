@@ -2,6 +2,7 @@ import React from 'react'
 //import ReactDOM from 'react-dom'
 import {FaBell} from 'react-icons/fa'
 import './Notifications.scss'
+import profilePic from './atirkey_dark.jpg';
 
 class Notifications extends React.Component {
 
@@ -34,7 +35,7 @@ class Notifications extends React.Component {
 
         var listItems = [];
         var sample_notification = <li className="notification-item">
-                                    <img src="/images/atirkey_dark.jpg" alt="Notifications"/>
+                                    <img src={profilePic} alt="Notifications"/>
                                     <div>
                                         <p><strong>Abhishek Tirkey</strong> commented on your pic.</p>
                                     </div>

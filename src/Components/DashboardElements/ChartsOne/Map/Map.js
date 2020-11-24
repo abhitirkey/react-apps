@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import CityListContext from '../CityListContext'
 import './Map.css'
+import mapMarker from './bigcity.png';
 
 class Map extends Component {
 
@@ -63,7 +64,7 @@ class Map extends Component {
                                         selectedCity: {data: city, latitude: latitude, longitude: longitude}
                                     })
                                 }}>
-                                <img src="/bigcity.png" alt="Big City Icon" />
+                                <img src={mapMarker} alt="Big City Icon" />
                                 </button>
                             </Marker>
                             );

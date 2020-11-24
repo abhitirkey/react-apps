@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react'
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import SatelliteContext from './SatelliteContext'
+import ISSIcon from './ISS-Icon.png'
 
 function SatelliteMap() {
     const [viewport, setViewport] = useState({
@@ -24,7 +25,7 @@ function SatelliteMap() {
                     mapStyle="mapbox://styles/abetirkey/ckfdwsvuy09rn19pf1j765q1n"
                     onViewportChange={(vp) => setViewport(vp)}>
                         <Marker latitude={satelliteData.latitude} longitude={satelliteData.longitude}>
-                            <img src="/ISS-Icon.png" alt="ISS-Icon" width={100} height={100}/>
+                            <img src={ISSIcon} alt="ISS-Icon" width={100} height={100}/>
                         </Marker>
                       </ReactMapGL>   
                 }
